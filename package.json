@@ -1,0 +1,16 @@
+{
+  "name": "docker-aws-deploy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
