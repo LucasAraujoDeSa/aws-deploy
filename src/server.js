@@ -11,6 +11,10 @@ const data = [
   }
 ]
 
+app.get("/", (req, res) => {
+  return res.status(200).send("ola")
+})
+
 app.get("/book", (req, res) => {
   return res.status(200).json({
     "books":data
