@@ -12,7 +12,7 @@ const data = [
 ]
 
 app.get("/", (req, res) => {
-  return res.status(200).send("ola")
+  return res.status(200).send("<h1>ola</h1>")
 })
 
 app.get("/book", (req, res) => {
