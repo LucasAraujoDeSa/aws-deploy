@@ -21,6 +21,22 @@ app.get("/book", (req, res) => {
   })
 })
 
+app.get("/book/:id", (req, res) => {
+  const {id} = req.params
+
+  data.forEach(book => {
+    if (book.id === parseInt(id)){
+      return res.status(200).json({
+        "book":book
+      })
+    }
+  })
+
+  return res.status(404).json({
+    "data":"no book"
+  })
+})
+
 app.post("/book", (req, res) => {
   const {title, price} = req.body
 
