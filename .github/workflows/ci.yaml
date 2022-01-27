@@ -20,9 +20,12 @@ jobs:
       - name: Install dependencies
         run: npm install --production
 
+      - name: Build Project
+        run: npm run build
+
       - name: Stop PM2
         run: pm2 stop server
         if: ${{failure()}}
 
       - name: Start PM2
-        run: pm2 start src/server.js --name server
+        run: pm2 start "npm run start" --name server
