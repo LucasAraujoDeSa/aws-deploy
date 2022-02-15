@@ -7,3 +7,4 @@ what was learned:
   - nginx
   - pm2
   - ci/cd
+  - amazon s3
